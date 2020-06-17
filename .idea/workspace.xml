@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3dc308-2bc5-49f8-887b-0e3d35ecfd64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/ExcludeSellerRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/ExcludeSellerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/animation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Item/ExcludeItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Item/Excludes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Item/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Item/ItemDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Item/Items.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Layout/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/actions/itemsAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/reducers/itemsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/newitems.ipsupply.net.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newitems.ipsupply.net.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Builders/ItemBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Builders/ItemBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/InsertNewItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/InsertNewItems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exclude.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exclude.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/EbayCallRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/EbayCallRepo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/ItemInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/ItemInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ItemRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ItemRepo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_18_050424_create_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_18_050424_create_items_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_19_230022_create_excludes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_19_230022_create_excludes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_20_044918_create_item_compares_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_20_044918_create_item_compares_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/express-socket/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/express-socket/node_modules/.bin/mime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Example.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +179,7 @@
       <workItem from="1561528522090" duration="11167000" />
       <workItem from="1591836251212" duration="686000" />
       <workItem from="1591839595747" duration="5801000" />
-      <workItem from="1592177976857" duration="22384000" />
+      <workItem from="1592177976857" duration="22814000" />
     </task>
     <servers />
   </component>
