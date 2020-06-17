@@ -1,0 +1,36 @@
+[07-Aug-2019 05:02:33 UTC] PHP Warning:  require(/home/ipsapp/public_html/newitems.ipsupply.net/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ipsapp/public_html/newitems.ipsupply.net/index.php on line 24
+[07-Aug-2019 05:02:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/ipsapp/public_html/newitems.ipsupply.net/../vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ipsapp/public_html/newitems.ipsupply.net/index.php on line 24
+[07-Aug-2019 05:04:33 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[07-Aug-2019 05:04:54 UTC] PHP Warning:  require(/home/ipsapp/public_html/newitems.ipsupply.netnewitems.ipsupply.net/newitems.ipsupply.net/vendor/autoload.php): failed to open stream: No such file or directory in /home/ipsapp/public_html/newitems.ipsupply.net/index.php on line 39
+[07-Aug-2019 05:04:54 UTC] PHP Fatal error:  require(): Failed opening required '/home/ipsapp/public_html/newitems.ipsupply.netnewitems.ipsupply.net/newitems.ipsupply.net/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ipsapp/public_html/newitems.ipsupply.net/index.php on line 39
+[07-Aug-2019 05:05:46 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[25-Aug-2019 22:59:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Application::configureMonologUsing() in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php:44
+Stack trace:
+#0 /home/ipsapp/public_html/newitems.ipsupply.net/index.php(41): require_once()
+#1 {main}
+  thrown in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php on line 44
+[25-Aug-2019 22:59:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Application::configureMonologUsing() in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php:44
+Stack trace:
+#0 /home/ipsapp/public_html/newitems.ipsupply.net/index.php(41): require_once()
+#1 {main}
+  thrown in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php on line 44
+[25-Aug-2019 22:59:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Application::configureMonologUsing() in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php:44
+Stack trace:
+#0 /home/ipsapp/public_html/newitems.ipsupply.net/index.php(41): require_once()
+#1 {main}
+  thrown in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php on line 44
+[25-Aug-2019 22:59:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Application::configureMonologUsing() in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php:44
+Stack trace:
+#0 /home/ipsapp/public_html/newitems.ipsupply.net/index.php(41): require_once()
+#1 {main}
+  thrown in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php on line 44
+[25-Aug-2019 23:00:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Application::configureMonologUsing() in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php:44
+Stack trace:
+#0 /home/ipsapp/public_html/newitems.ipsupply.net/index.php(41): require_once()
+#1 {main}
+  thrown in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php on line 44
+[25-Aug-2019 23:00:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Application::configureMonologUsing() in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php:44
+Stack trace:
+#0 /home/ipsapp/public_html/newitems.ipsupply.net/index.php(41): require_once()
+#1 {main}
+  thrown in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/bootstrap/app.php on line 44

@@ -15,7 +15,7 @@ class CreateExcludesTable extends Migration
     {
         Schema::create('excludes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('name', 100);
             $table->timestamps();
         });
     }

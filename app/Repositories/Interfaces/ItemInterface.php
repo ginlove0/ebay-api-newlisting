@@ -22,4 +22,16 @@ interface ItemInterface
 
 //    insert new item
     public function insertAll();
+
+
+//    put the title of the item to blacklist
+    public function titleBlackList($title);
+
+//    this function is to check whether the item is in the black list
+    public function checkItemExclude($title);
+
+//    this function is to truncate all the data from item at the end of the day
+    public function truncateData();
+
+    public function checkCategory($category);
 }

@@ -1,0 +1,1 @@
+[28-Apr-2020 02:57:31 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/ipsapp/public_html/newitems.ipsupply.net/newitems.ipsupply.net/app/Console/Kernel.php on line 10

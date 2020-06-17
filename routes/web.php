@@ -12,17 +12,7 @@
 */
 
 Route::view('/{path?}', 'app');
-
-//Route::get('/', 'ItemController@index');
-//Route::get('/{id}', 'ItemController@items');
+//for push notification to ios device
 
 Route::get('/test/show', "TestController@index");
-
-//test socket io
-Route::get('/socket', "SocketController@index");
-Route::get('/sendmessage', 'SocketController@sendMessage');
-
-
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

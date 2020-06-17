@@ -3,15 +3,20 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 
 class Item extends Model
 {
     //
 
+//    use SoftDeletes;
+
     protected $table = "items";
 
     public $incrementing = false;
+
+    protected $fillable = ['id', 'itemid', 'title', 'item_condition'];
 
     public static function selectToDisplay()
     {

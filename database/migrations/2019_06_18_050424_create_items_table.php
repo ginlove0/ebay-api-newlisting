@@ -26,6 +26,8 @@ class CreateItemsTable extends Migration
             $table->string('description');
             $table->string('picture')->nullable(true);
             $table->boolean('has_seen');
+            $table->string('seller');
+
             $table->timestamps();
         });
     }

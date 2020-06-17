@@ -39,13 +39,19 @@ class ItemBuilder
         return $this;
     }
 
+    public function addSeller($seller)
+    {
+        $this->item->seller = $seller;
+        return $this;
+    }
+
     public function addSite($from_site)
     {
         $this->item->from_site = $from_site;
         return $this;
     }
 
-    public function addShippingCcost($shipping_cost)
+    public function addShippingCost($shipping_cost)
     {
         $this->item->shipping_cost = $shipping_cost;
         return $this;
@@ -78,6 +84,24 @@ class ItemBuilder
     public function addEnd_time($end_time)
     {
         $this->item->end_time = $end_time;
+        return $this;
+    }
+
+    public function addFeedbackScore($feedbackScore)
+    {
+        $this->item->feedbackScore = $feedbackScore;
+        return $this;
+    }
+
+    public function add_category($category)
+    {
+        $this->item->category = $category;
+        return $this;
+    }
+
+    public function addFeedbackPercent($feedbackPercent)
+    {
+        $this->item->feedbackPercent = $feedbackPercent;
         return $this;
     }
 

@@ -4,9 +4,12 @@ namespace App\Console\Commands;
 
 use App\Events\MessagePushed;
 use App\Item;
+use App\Notifications\iosNotification;
+use App\Notifications\OneSignalNotification;
 use App\Repositories\Interfaces\ItemInterface;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class InsertNewItems extends Command
 {
@@ -43,10 +46,26 @@ class InsertNewItems extends Command
     public function handle()
     {
         //
+        new iosNotification();
        $newData = $this->item_di->insertAll();
-        $data = DB::table('items')->orderBy('created_at', 'desc')->get();
+        $oneSignal = new OneSignalNotification();
         foreach ($newData as $item)
         {
+            Log::debug($item);
+
+            $content = $item['title'];
+            $content .= ' --- Seller: ' . $item['seller'];
+            $heading = '$' . $item['price'];
+            $heading .= ' - '. $item['from_site'];
+            $media = $item['galaryPlus'];
+            $subtitle = 'Shipping: ' . $item['shipping_cost'];
+            $subtitle .= ' - ' . $item['item_condition'];
+
+
+//            convert http picture to https
+            $url = str_ireplace( 'http://', 'https://', $media );
+
+            $oneSignal->send($content, $heading,$item, $subtitle ,$url, $item['id']);
             event(new MessagePushed($item));
         }
     }

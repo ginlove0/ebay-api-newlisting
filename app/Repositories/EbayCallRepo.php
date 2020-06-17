@@ -3,6 +3,9 @@
 
 namespace App\Repositories;
 use App\Repositories\Interfaces\EbayCallInterface;
+use GuzzleHttp\Exception\ServerException;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class EbayCallRepo implements EbayCallInterface
 {
@@ -13,6 +16,7 @@ class EbayCallRepo implements EbayCallInterface
         $endpoint = env('EBAYENDPOINT', '');
 //        Get the Ebay Application ID from .env
         $appID = env('EBAYAPPID', '');
+        $appID2 = env('EBAYAPPID2', '');
 //      Get JSON type rather than XML
         $responseEncoding = 'JSON';
 
@@ -21,22 +25,51 @@ class EbayCallRepo implements EbayCallInterface
 //        Need to put this in database
         $site = $siteID;
 
+
+        $data = (array) DB::select('select * from exclude_sellers');
+        $excludeSeller = '';
+        if(count($data) > 0) {
+            $excludeSeller .= '&itemFilter(0).name=ExcludeSeller';
+            for ($index = 0; $index < count($data); $index++) {
+                $excludeSeller .= '&itemFilter(0).value(' . $index . ')=' . $data[$index]->name;
+            }
+        }
+
+
         $apicall = "$endpoint?OPERATION-NAME=findItemsAdvanced"
             . "&SERVICE-VERSION=1.0.0"
-            . "&GLOBAL-ID=$site"
+            . "&SITEID=$site"
             . "&SECURITY-APPNAME=$appID" //replace with your app id
-            . "&paginationInput.entriesPerPage=50"
+            . "&paginationInput.entriesPerPage=25"
             . "&paginationInput.pageNumber=$pageNumber"
             . "&keywords=$query"
             . "&sortOrder=StartTimeNewest"
+            . "&outputSelector=SellerInfo"
             . "&RESPONSE-DATA-FORMAT=$responseEncoding"
             . "&REST-PAYLOAD";
 
         $client = new \GuzzleHttp\Client();
-//
-        $resp = $client->get($apicall);
-//
+        try {
+            $resp = $client->get($apicall);
+//            Log::info($resp, ['loloooooo']);
+
+        } catch (ServerException $ex) {
+            $apicall = "$endpoint?OPERATION-NAME=findItemsAdvanced"
+                . "&SERVICE-VERSION=1.0.0"
+                . "&SITEID=$site"
+                . "&SECURITY-APPNAME=$appID2" //replace with your app id
+                . "&paginationInput.entriesPerPage=25"
+                . "&paginationInput.pageNumber=$pageNumber"
+                . "&keywords=$query"
+                . "&sortOrder=StartTimeNewest"
+                . "&outputSelector=SellerInfo"
+                . "&RESPONSE-DATA-FORMAT=$responseEncoding"
+                . "&REST-PAYLOAD";
+
+            $resp = $client->get($apicall);
+        }
         $data = json_decode($resp->getBody(), true);
+
         return $data;
     }
 
